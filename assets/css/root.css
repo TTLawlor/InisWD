@@ -30,6 +30,11 @@
         scroll-behavior: smooth;
         display: flex;
         flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        margin-top: 3rem;
     }
 
     button {
@@ -46,10 +51,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        max-height: 3rem;
     }
 
     .logo {
-        max-width: 9rem;
+        max-width: 7rem;
     }
 
     img { 
@@ -70,7 +76,6 @@
 
     #navigation .ul-wrapper {
         display: none;
-        margin-top: 8px;
     }
     
     /* Show the dropdown menu (use JS to add this class to the .dropdown-content 
@@ -132,13 +137,93 @@
         color: var(--redDark);    
     }
 
+    main .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    main h1 {
+        font: var(--headerFont);
+        font-size: var(--headerFontSize);
+        text-transform: capitalize;
+        font-weight: 600;
+        padding: 1rem;
+    }
+
+    main p {
+        font: var(--bodyFont);
+        font-size: var(--bodyFontSize);
+        text-transform: capitalize;
+        font-weight: 400;
+        padding: 1rem;
+    }
+
+    main button {
+        padding: 0.8rem 1.5rem;
+        border: 4px, solid, var(--redDark);
+        border-radius: 13px;
+        background-color: white;
+        color: var(--redDark);
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: var(--bodyFont);
+        font-weight: 600;
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
+        margin: 1rem;
+        transition-duration: 0.4s;
+
+    }
+
+    main button:hover {
+        background-color: var(--redDark);
+        color: white;
+    }
+
+    main .right-arrow{
+        position: relative;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        border: 4px, var(--bodyTextColor);
+        border-style: solid none;
+    }
+
+    main .right-arrow::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 100%;
+        top: -4px;
+        border-top: 70px solid transparent;
+        border-left: 50px solid var(--bodyTextColor);
+        border-bottom: 70px solid transparent;
+    }
+
+    main .right-arrow::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 100%;
+        top: 0;
+        border-top: 66px solid transparent;
+        border-left: 47px solid white;
+        border-bottom: 66px solid transparent;
+    }
+
     footer {
         z-index: -2;
         background-color: var(--greenLight);
-        position: fixed;
+        position: relative;
         bottom: 0;
         width: 100%;
         left: 0;
+        margin-top: auto;
     }
 
     footer .container {
@@ -153,6 +238,9 @@
 
     footer hr {
         min-width: 4rem;
+        border: none;
+        background-color: white;
+        height: 1px;
     }
 
     footer li {
@@ -192,11 +280,15 @@
         font-size: 0.5em;
         text-decoration: none;
         color: white;
-        /* padding: 0rem; */
     }
 
     footer .icon {
-        width: 6rem;
+        padding: 1rem 1rem 0rem 1rem;
+    }
+
+    footer .icon img {
+        max-width: 2rem;
+        padding: 0rem;
     }
 
     footer .connect {
@@ -210,7 +302,7 @@
         text-decoration: none;
         color: white;
         display: inline-block;
-        padding: 1rem;
+        padding-bottom: 1rem;
     }
 
     footer .connect img {
