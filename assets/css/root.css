@@ -43,6 +43,10 @@
         cursor: pointer;
     }
 
+    header {
+        z-index: 2;
+    }
+
     #navigation {
         background-color: var(--redDark);
         position: fixed;
@@ -276,24 +280,24 @@
 
     .services .container {
         padding: 0;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .services .banner {
-        max-width: 40%;
+        /* max-width: 40%; */
         background-color: var(--redLight);
         padding: 0%;
     }
 
     .services .slides-container {
-        min-width: 60%;
+        /* min-width: 60%; */
         background-color: var(--bodyTextColor);
         padding: 0%;
     }
 
     .services h1 {
         font-size: 1rem;
-        text-align: left;
+        text-align: center;
     }
 
     .slide h1, .slide p  {
@@ -306,6 +310,14 @@
         font-size: var(--smallbodyFontSize);
         padding-top: 0%;
         /* font-weight: 300; */
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
     }
 
     footer {
