@@ -15,7 +15,7 @@
     --bodyTextColor: #1E1E1E;
     --bodyTextColorWhite: #ffffff;
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-    --subheaderFontSize: clamp(.9375rem, 2.9vw, 2.0625rem);
+    --subheaderFontSize: clamp(1rem, 3vw, 2.2rem);
     --bodyFontSize: 1rem;
     --smallbodyFontSize: .7rem;
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
@@ -322,6 +322,24 @@
 
     .active {
         background-color: #717171;
+    }
+
+    .card {
+        width: 75%;
+        height: 4rem;
+        margin: auto;
+        margin-bottom: 2rem;
+        border: 2px, solid, var(--redDark);
+
+    }
+
+    .card-header {
+        background-color: var(--redDark);
+        color: white;
+        text-align: center;
+        font-size: var(--subheaderFontSize);
+        font-weight: 500;
+        padding: 0.5rem;
     }
 
 
