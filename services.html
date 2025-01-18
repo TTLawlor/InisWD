@@ -10,8 +10,13 @@
         <meta property="og:title" content="Small and Medium Business Web Designer | Inis Web Designs | Affordable and Professional">
         <meta propperty="og::type" content="website">
         <meta content="#ffffff" name="theme-color">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
         <link href="assets/css/root.css" rel="stylesheet">
         <script defer src="assets/js/navbar.js"></script>
+        <!-- <script defer src="assets/js/utility.js"></script> -->
     </head>
     <body>
         <header id="navigation">
@@ -43,7 +48,152 @@
                     </div>
                 </nav>
             </div>
-
         </header>
+        <main>
+            <section class="services-hero">
+                <div class="container">
+                    <h1><span style="color: var(--redDark);">Heading</span></h1>
+                    <p>description Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <button type="button" class="btn-dark">learn more</button>
+                </div>
+            </section>
+            <section class="service-one">
+                <div class="container">
+                    <img src="assets/images/designer-98.svg">
+                    <h1>heading</h1>
+                    <p>description Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </section>
+            <section class="service-two">
+                <div class="container">
+                    <img src="assets/images/coding-29.svg">
+                    <h1>heading</h1>
+                    <p>description Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </section>
+            <section class="service-three">
+                <div class="container">
+                    <img src="assets/images/data-analysis-45.svg">
+                    <h1>heading</h1>
+                    <p>description Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </section>
+            <section class="price-plans">
+                <div class="container">
+                    <div class="services-menu">
+                        <button type="button" class="btn-active" onclick="toggleServices()">Hand-Coded</button>
+                        <button type="button" class="" onclick="toggleServices()">CMS</button>
+                    </div>
+                    <div class="services-cards">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="service-type">Hand-Coded Lump Sum</span>
+                            </div>
+                            <div class="cost">
+                                <span class="euro">€</span>
+                                <span class="price">75</span>
+                            </div>
+                            <div class="payment">
+                                <span class="duration">Per Month</span>
+                            </div>
+                            <div class="plan-benifits">
+                                <ul class="ul">
+                                    <li class="li colour"><img src="assets/images/icons8-checkmark.svg">Reason 1</li>
+                                    <li class="li colour"><img src="assets/images/icons8-checkmark.svg">Reason 2</li>
+                                    <li class="li"><img src="assets/images/icons8-checkmark.svg">Reason 3</li>
+                                    <li class="li"><img src="assets/images/icons8-checkmark.svg">Reason 4</li>
+                                </ul>
+                            </div>
+                            <div class="cardbtn colour"><button type="button">learn more</button></div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="service-type">Hand-Coded Lump Sum</span>
+                            </div>
+                            <div class="cost">
+                                <span class="euro">€</span>
+                                <span class="price">75</span>
+                            </div>
+                            <div class="payment">
+                                <span class="duration">Per Month</span>
+                            </div>
+                            <div class="plan-benifits">
+                                <ul class="ul">
+                                    <li class="li colour"><img src="assets/images/icons8-checkmark.svg">Reason 1</li>
+                                    <li class="li colour"><img src="assets/images/icons8-checkmark.svg">Reason 2</li>
+                                    <li class="li"><img src="assets/images/icons8-checkmark.svg">Reason 3</li>
+                                    <li class="li"><img src="assets/images/icons8-checkmark.svg">Reason 4</li>
+                                </ul>
+                            </div>
+                            <div class="cardbtn colour"><button type="button">learn more</button></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <a class="logo" href="index.html" aria-label="to home">
+                    <img src="assets/images/InisWD_logo_white.svg" alt="logo" aria-hidden="true">
+                </a>
+                <hr>
+                <nav>
+                    <div id="footer-menu" class="ul-wrapper">
+                        <ul class="menu">
+                            <li class="li">
+                                <a class="li-link" href="index.html">Home</a>
+                            </li>
+                            <li class="li">
+                                <a class="li-link" href="about.html">About</a>
+                            </li>
+                            <li class="li">
+                                <a class="li-link" href="services.html">Services</a>
+                            </li>
+                            <li class="li">
+                                <a class="li-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <hr>
+                <div class="footer-icons">
+                    <ul>
+                        <li>
+                            <a class="icon" href="https://www.facebook.com/profile.php?id=61564869911862" aria-label="go to facebook">
+                                <img src="assets/images/icons8-facebook-32.png" alt="facebook">                            
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon" href="https://www.facebook.com/profile.php?id=61564869911862" aria-label="send an email">
+                                <img src="assets/images/icons8-mail-box-32.png" alt="email">                            
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon" href="https://www.facebook.com/profile.php?id=61564869911862" aria-label="book a call">
+                                <img src="assets/images/icons8-video-conference-50 (1).png" alt="call">                            
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="connect">
+                    <a class="call-to-action" href="contact.html">connect with us <img src="assets/images/icons8-diagonal-arrow-24.png"></a>
+                </div>
+                <div class="footer-end">
+                    <p>@Copyright</p>
+                    <div class="footer-end-links">
+                        <a class="t-and-cs" href="index.html" aria-label="to home">
+                            Terms & Conditions
+                        </a>
+                        <a class="privacy-policy" href="index.html" aria-label="to home">
+                            Privacy Policy
+                        </a>
+                    </div>
+                </div>
+            </div>            
+        </footer>
     </body>
 </html>
