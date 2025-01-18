@@ -177,7 +177,7 @@
 
     main button {
         padding: 0.8rem 1.5rem;
-        border: 4px, solid, var(--redDark);
+        border: 4px solid var(--redDark);
         border-radius: 13px;
         background-color: white;
         color: var(--redDark);
@@ -326,11 +326,11 @@
 
     .card {
         width: 75%;
-        height: 4rem;
+        height: fit-content;
         margin: auto;
         margin-bottom: 2rem;
-        border: 2px, solid, var(--redDark);
-
+        display: block;
+        border: 2px solid var(--redDark);
     }
 
     .card-header {
@@ -342,7 +342,240 @@
         padding: 0.5rem;
     }
 
+    .cost {
+        display: flex;
+        justify-content: center;
+        margin-left: -25px;
+        height: 90px;
+        
+    }
 
+    .align {
+        justify-content: center;
+    }
+    
+    .cost .price {
+        padding-bottom: 0;
+        font-family: Roboto Mono;
+        font-size: 5rem;
+        font-weight: 800;
+        letter-spacing: -5px;
+        padding-right: 5px;
+        background-color: var(--redDark);
+        background-image: linear-gradient(180deg, var(--redDark), white);
+        background-size: 100% 120%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: white;
+        -moz-text-fill-color: white;
+        -webkit-text-stroke: 5px transparent;
+    }
+    
+    .cost .euro {
+        font-family: Roboto Mono;
+        color: var(--redDark);
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 15px; 
+        margin-right: 7px;
+    }
+    
+    .payment {
+        text-align: center;
+        
+    }
+    
+    .payment .duration {
+        color: var(--redDark);
+        text-transform: lowercase;
+        font-size: var(--subheaderFontSize);
+        font-weight: 500;
+    }
+
+    .plan-benifits li {
+        display: flex; 
+        align-items: center;
+    }
+
+    .colour {
+        background-color: var(--redLight);
+    }
+
+    .plan-benifits img {
+        display: block;
+        float: left;
+    }
+
+    .cardbtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .reviews {
+        background-color: var(--redLight);
+    }
+    
+    .call-to-action-hp {
+        background: linear-gradient(180deg, var(--redLight) 80%, white 20%);
+    }
+    
+    .about-hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, rgba(159, 17, 17), rgba(159, 17, 17, 0.6)),
+        url("../images/cliffs-moher-ireland.jpg");
+        background-size: cover;
+        height: 16rem;
+    }
+    
+    .about-hero p {
+        color: white;
+        font-size: var(--subheaderFontSize);
+        font-style: italic;
+        font-weight: 300;
+        text-transform: none;
+    }
+    
+    .about-me .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url("../images/red-triangle.svg"), url("../images/light-red-rect.svg"), url("../images/wave.svg"), url("../images/wave.svg") ;
+        background-repeat: no-repeat;
+    }
+    
+/*     .about-me .image:before {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    } */
+    
+    .about-me .image img {
+        width: 50%;
+    }
+    
+    .company-goals {
+        margin-bottom: 47px;
+        background: url("../images/white-triangle.svg");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: var(--redLight);
+    }
+    
+    .company-goals:before {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 47px;
+        background-image: url("../images/light-red-triangle.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 13.4rem;
+    }
+    
+    .values {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .values img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80px;
+        max-height: 80px;
+    }
+    
+    .call-to-action-about {
+        background: linear-gradient(0deg, var(--greenLight) 50%, white 50%);
+    }
+    
+    .call-to-action-about .cta-content {
+        background-color: var(--redLight);
+        border-radius: 5px;
+    }
+    
+    .call-to-action-about h1 {
+        font-size: 1.5rem;
+        color: var(--redDark);
+    }
+    
+/*     .call-to-action-about p {
+        font-size: var(--smallbodyFontSize);
+    } */
+    
+    .call-to-action-about .buttons {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .call-to-action-about button {
+        margin: 1rem 0.5rem;
+    }
+    
+    .btn-dark {
+        background-color: var(--redDark);
+        color: var(--redLight);
+    }
+    
+    .btn-light {
+        background-color: var(--redLight);
+    }
+    
+    .services-hero .container {
+        background-color: var(--redLight);
+        display: flex;
+        align-items: center;
+    }
+    
+    .services-hero button {
+        width: fit-content;
+    }
+    
+    .price-plans .container {
+        padding: 0;
+    }
+    
+    .services-menu {
+        background-color: var(--greenLight);
+        width: 100%;
+        
+    }
+    
+    .services-menu button {
+        height: 100%;
+        color: white;
+        margin: 0 -3px;
+        background-color: var(--greenLight);
+        border: none;
+        border-radius: 0;
+        width: 35%;
+        text-transform: none;
+    }
+    
+    .services-menu .btn-active {
+        background-color: var(--greenDark);
+    }
+    
+    .services-menu .btn-active:before {
+        content: "";
+        background: url("../images/green-triangle.svg");
+        z-index: -1;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 4.5% 70%;
+        height: 50px;
+        width: 100%;
+/*         margin: 70px -57.5px; */
+    }
+    
+    .services-cards {
+        padding-top: 2rem;
+    }
+    
     footer {
         z-index: -2;
         background-color: var(--greenLight);
